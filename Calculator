@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet"  href="caculator.css">
+  <body>
+    <div class="container">
+      <div class="caculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display">
+          </div>
+          <div>
+            <input type="button" value="Ac" id="operator">
+              <input type="button" value="DEL" id="operator">
+                <input type="button" value="." id="operator">
+                 <input type="button" value="/" id="operator">
+          </div>
+           <div>
+            <input type="button" value="7">
+              <input type="button" value="8">
+                <input type="button" value="9">
+                  <input type="button" value="+" id="operator">
+          </div>
+           <div>
+            <input type="button" value="4">
+              <input type="button" value="5">
+                <input type="button" value="6">
+                  <input type="button" value="-" id="operator">
+          </div>
+           <div>
+            <input type="button" value="1">
+              <input type="button" value="2">
+                <input type="button" value="3">
+                  <input type="button" value="+" id="operator">
+          </div>
+           <div>
+            <input type="button" value="%">
+              <input type="button" value="0">
+                <input type="button" value="=" class="equal" id="operator">
+             
+          </div>
+        </form>
+      </div>
+  </div>
+</body>
+</html>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:black;
+  font-family:'popins,'sans-serif;
+}
+.container{
+  background:#e3f9ff;
+  width:100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caculator{
+  background:#3a4452;
+  padding: 20px;
+  border-radius: 10px;
+}
+.caculator form input{
+  border: 0;
+  outline: 0;
+  width:60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow:-8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  
+}
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+form input.equal{
+  width: 145px;
+  
+}
+ form input#operator{
+   color: #33ffd8;
+  
+}
